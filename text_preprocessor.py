@@ -1,4 +1,6 @@
-import nltk, string, re
+import nltk
+import re
+import string
 # from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -11,10 +13,11 @@ lemmatizer = WordNetLemmatizer()
 def remove_things(text):
     text = str(text).lower()
 
-    text = re.sub(r'https?:\/\/\w*\.\w*', '', text)
+    text = re.sub(r'https?:\/\/\w*\.\w*[\/\w*]*', '', text)
 
-    text = re.sub(r'[a-zA-Z0-9]*[^a-zA-Z0-9]+', ' ', text)
-
+    text = re.sub(r'\w*[~`+@#$%*()_\^&–+={}>/|\\\[\]”‘<]+\w*', ' ', text)
+    text = re.sub(r'\w*\'', '', text)
+    print(text)
     return text
 
 
