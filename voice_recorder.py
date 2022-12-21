@@ -19,7 +19,7 @@ class voiceRecorder:
             if ask:
                 self.engine_speak(ask)
             try:
-                audio = self.recognizer.listen(source, 15, 15)  # listen for the audio via source
+                audio = self.recognizer.listen(source, 15, 150)  # listen for the audio via source
             except sr.WaitTimeoutError as e:
                 print("Timeout; {0}".format(e))
             print("Done Listening")
