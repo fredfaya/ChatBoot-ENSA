@@ -1,0 +1,411 @@
+
+Epoch 1/150
+wandb: WARNING The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+5/5 [==============================] - ETA: 0s - loss: 2.3038 - sparse_categorical_accuracy: 0.1014
+Epoch 1: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 23s 4s/step - loss: 2.3038 - sparse_categorical_accuracy: 0.1014 - val_loss: 2.2996 - val_sparse_categorical_accuracy: 0.1316
+Epoch 2/150
+5/5 [==============================] - ETA: 0s - loss: 2.3005 - sparse_categorical_accuracy: 0.1149
+Epoch 2: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.3005 - sparse_categorical_accuracy: 0.1149 - val_loss: 2.2977 - val_sparse_categorical_accuracy: 0.1316
+Epoch 3/150
+5/5 [==============================] - ETA: 0s - loss: 2.2978 - sparse_categorical_accuracy: 0.1149
+Epoch 3: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2978 - sparse_categorical_accuracy: 0.1149 - val_loss: 2.2962 - val_sparse_categorical_accuracy: 0.1316
+Epoch 4/150
+5/5 [==============================] - ETA: 0s - loss: 2.2934 - sparse_categorical_accuracy: 0.1149
+Epoch 4: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2934 - sparse_categorical_accuracy: 0.1149 - val_loss: 2.2944 - val_sparse_categorical_accuracy: 0.1316
+Epoch 5/150
+5/5 [==============================] - ETA: 0s - loss: 2.2992 - sparse_categorical_accuracy: 0.1149
+Epoch 5: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2992 - sparse_categorical_accuracy: 0.1149 - val_loss: 2.2925 - val_sparse_categorical_accuracy: 0.1316
+Epoch 6/150
+5/5 [==============================] - ETA: 0s - loss: 2.2864 - sparse_categorical_accuracy: 0.1149
+Epoch 6: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2864 - sparse_categorical_accuracy: 0.1149 - val_loss: 2.2884 - val_sparse_categorical_accuracy: 0.1316
+Epoch 7/150
+5/5 [==============================] - ETA: 0s - loss: 2.2881 - sparse_categorical_accuracy: 0.1216
+Epoch 7: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 17s 4s/step - loss: 2.2881 - sparse_categorical_accuracy: 0.1216 - val_loss: 2.2879 - val_sparse_categorical_accuracy: 0.2105
+Epoch 8/150
+5/5 [==============================] - ETA: 0s - loss: 2.2878 - sparse_categorical_accuracy: 0.1419
+Epoch 8: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2878 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2852 - val_sparse_categorical_accuracy: 0.2105
+Epoch 9/150
+5/5 [==============================] - ETA: 0s - loss: 2.2851 - sparse_categorical_accuracy: 0.1419
+Epoch 9: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 17s 4s/step - loss: 2.2851 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2830 - val_sparse_categorical_accuracy: 0.2105
+Epoch 10/150
+5/5 [==============================] - ETA: 0s - loss: 2.2841 - sparse_categorical_accuracy: 0.1419
+Epoch 10: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2841 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2824 - val_sparse_categorical_accuracy: 0.2105
+Epoch 11/150
+5/5 [==============================] - ETA: 0s - loss: 2.2848 - sparse_categorical_accuracy: 0.1419
+Epoch 11: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 313ms/step - loss: 2.2848 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2834 - val_sparse_categorical_accuracy: 0.2105
+Epoch 12/150
+5/5 [==============================] - ETA: 0s - loss: 2.2889 - sparse_categorical_accuracy: 0.1419
+Epoch 12: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 359ms/step - loss: 2.2889 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2836 - val_sparse_categorical_accuracy: 0.2105
+Epoch 13/150
+5/5 [==============================] - ETA: 0s - loss: 2.2859 - sparse_categorical_accuracy: 0.1419
+Epoch 13: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 440ms/step - loss: 2.2859 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2848 - val_sparse_categorical_accuracy: 0.2105
+Epoch 14/150
+5/5 [==============================] - ETA: 0s - loss: 2.2852 - sparse_categorical_accuracy: 0.1419
+Epoch 14: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 288ms/step - loss: 2.2852 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2851 - val_sparse_categorical_accuracy: 0.2105
+Epoch 15/150
+5/5 [==============================] - ETA: 0s - loss: 2.2838 - sparse_categorical_accuracy: 0.1419
+Epoch 15: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 15s 4s/step - loss: 2.2838 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2817 - val_sparse_categorical_accuracy: 0.2105
+Epoch 16/150
+5/5 [==============================] - ETA: 0s - loss: 2.2837 - sparse_categorical_accuracy: 0.1419
+Epoch 16: saving model to .\Model\ChatBotModel.hdf5
+WARNING:absl:Found untraced functions such as lstm_cell_layer_call_fn, lstm_cell_layer_call_and_return_conditional_losses, lstm_cell_1_layer_call_fn, lstm_cell_1_layer_call_and_return_conditional_losses, lstm_cell_2_layer_call_fn while saving (showing 5 of 6). These functions will not be directly callable after loading.
+wandb: Adding directory to artifact (C:\Users\ADMIN\Desktop\ChatBoot\ChatBoot-ENSA\wandb\run-20221228_002423-2gdigckh\files\model-best)... Done. 0.2s
+5/5 [==============================] - 16s 4s/step - loss: 2.2837 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2775 - val_sparse_categorical_accuracy: 0.2105
+Epoch 17/150
+5/5 [==============================] - ETA: 0s - loss: 2.2829 - sparse_categorical_accuracy: 0.1419
+Epoch 17: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 315ms/step - loss: 2.2829 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2793 - val_sparse_categorical_accuracy: 0.2105
+Epoch 18/150
+5/5 [==============================] - ETA: 0s - loss: 2.2826 - sparse_categorical_accuracy: 0.1419
+Epoch 18: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 329ms/step - loss: 2.2826 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2836 - val_sparse_categorical_accuracy: 0.2105
+Epoch 19/150
+5/5 [==============================] - ETA: 0s - loss: 2.2832 - sparse_categorical_accuracy: 0.1419
+Epoch 19: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 351ms/step - loss: 2.2832 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2856 - val_sparse_categorical_accuracy: 0.2105
+Epoch 20/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 20: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 365ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2887 - val_sparse_categorical_accuracy: 0.2105
+Epoch 21/150
+5/5 [==============================] - ETA: 0s - loss: 2.2826 - sparse_categorical_accuracy: 0.1419
+Epoch 21: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2826 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2887 - val_sparse_categorical_accuracy: 0.2105
+Epoch 22/150
+5/5 [==============================] - ETA: 0s - loss: 2.2821 - sparse_categorical_accuracy: 0.1419
+Epoch 22: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2821 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2896 - val_sparse_categorical_accuracy: 0.2105
+Epoch 23/150
+5/5 [==============================] - ETA: 0s - loss: 2.2823 - sparse_categorical_accuracy: 0.1419
+Epoch 23: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 309ms/step - loss: 2.2823 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2907 - val_sparse_categorical_accuracy: 0.2105
+Epoch 24/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 24: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2911 - val_sparse_categorical_accuracy: 0.2105
+Epoch 25/150
+5/5 [==============================] - ETA: 0s - loss: 2.2823 - sparse_categorical_accuracy: 0.1419
+Epoch 25: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 312ms/step - loss: 2.2823 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2902 - val_sparse_categorical_accuracy: 0.2105
+Epoch 26/150
+5/5 [==============================] - ETA: 0s - loss: 2.2812 - sparse_categorical_accuracy: 0.1419
+Epoch 26: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 322ms/step - loss: 2.2812 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2900 - val_sparse_categorical_accuracy: 0.2105
+Epoch 27/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 27: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 313ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2892 - val_sparse_categorical_accuracy: 0.2105
+Epoch 28/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 28: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 335ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2897 - val_sparse_categorical_accuracy: 0.2105
+Epoch 29/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 29: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 311ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2899 - val_sparse_categorical_accuracy: 0.2105
+Epoch 30/150
+5/5 [==============================] - ETA: 0s - loss: 2.2834 - sparse_categorical_accuracy: 0.1419
+Epoch 30: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2834 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2887 - val_sparse_categorical_accuracy: 0.2105
+Epoch 31/150
+5/5 [==============================] - ETA: 0s - loss: 2.2829 - sparse_categorical_accuracy: 0.1419
+Epoch 31: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2829 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2885 - val_sparse_categorical_accuracy: 0.2105
+Epoch 32/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 32: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 307ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2896 - val_sparse_categorical_accuracy: 0.2105
+Epoch 33/150
+5/5 [==============================] - ETA: 0s - loss: 2.2823 - sparse_categorical_accuracy: 0.1419
+Epoch 33: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 316ms/step - loss: 2.2823 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2908 - val_sparse_categorical_accuracy: 0.2105
+Epoch 34/150
+5/5 [==============================] - ETA: 0s - loss: 2.2819 - sparse_categorical_accuracy: 0.1419
+Epoch 34: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 335ms/step - loss: 2.2819 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2897 - val_sparse_categorical_accuracy: 0.2105
+Epoch 35/150
+5/5 [==============================] - ETA: 0s - loss: 2.2842 - sparse_categorical_accuracy: 0.1419
+Epoch 35: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 324ms/step - loss: 2.2842 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2905 - val_sparse_categorical_accuracy: 0.2105
+Epoch 36/150
+5/5 [==============================] - ETA: 0s - loss: 2.2831 - sparse_categorical_accuracy: 0.1419
+Epoch 36: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 2s 324ms/step - loss: 2.2831 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2885 - val_sparse_categorical_accuracy: 0.2105
+Epoch 37/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 37: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 317ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2877 - val_sparse_categorical_accuracy: 0.2105
+Epoch 38/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 38: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 306ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2891 - val_sparse_categorical_accuracy: 0.2105
+Epoch 39/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 39: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2904 - val_sparse_categorical_accuracy: 0.2105
+Epoch 40/150
+5/5 [==============================] - ETA: 0s - loss: 2.2812 - sparse_categorical_accuracy: 0.1419
+Epoch 40: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 309ms/step - loss: 2.2812 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2902 - val_sparse_categorical_accuracy: 0.2105
+Epoch 41/150
+5/5 [==============================] - ETA: 0s - loss: 2.2824 - sparse_categorical_accuracy: 0.1419
+Epoch 41: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2824 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2894 - val_sparse_categorical_accuracy: 0.2105
+Epoch 42/150
+5/5 [==============================] - ETA: 0s - loss: 2.2823 - sparse_categorical_accuracy: 0.1419
+Epoch 42: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2823 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2886 - val_sparse_categorical_accuracy: 0.2105
+Epoch 43/150
+5/5 [==============================] - ETA: 0s - loss: 2.2824 - sparse_categorical_accuracy: 0.1419
+Epoch 43: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 302ms/step - loss: 2.2824 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2881 - val_sparse_categorical_accuracy: 0.2105
+Epoch 44/150
+5/5 [==============================] - ETA: 0s - loss: 2.2811 - sparse_categorical_accuracy: 0.1419
+Epoch 44: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2811 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2866 - val_sparse_categorical_accuracy: 0.2105
+Epoch 45/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 45: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2855 - val_sparse_categorical_accuracy: 0.2105
+Epoch 46/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 46: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2858 - val_sparse_categorical_accuracy: 0.2105
+Epoch 47/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 47: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2859 - val_sparse_categorical_accuracy: 0.2105
+Epoch 48/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 48: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2868 - val_sparse_categorical_accuracy: 0.2105
+Epoch 49/150
+5/5 [==============================] - ETA: 0s - loss: 2.2819 - sparse_categorical_accuracy: 0.1419
+Epoch 49: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2819 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2869 - val_sparse_categorical_accuracy: 0.2105
+Epoch 50/150
+5/5 [==============================] - ETA: 0s - loss: 2.2816 - sparse_categorical_accuracy: 0.1419
+Epoch 50: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 302ms/step - loss: 2.2816 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2879 - val_sparse_categorical_accuracy: 0.2105
+Epoch 51/150
+5/5 [==============================] - ETA: 0s - loss: 2.2807 - sparse_categorical_accuracy: 0.1419
+Epoch 51: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 309ms/step - loss: 2.2807 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2886 - val_sparse_categorical_accuracy: 0.2105
+Epoch 52/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 52: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 311ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2895 - val_sparse_categorical_accuracy: 0.2105
+Epoch 53/150
+5/5 [==============================] - ETA: 0s - loss: 2.2821 - sparse_categorical_accuracy: 0.1419
+Epoch 53: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2821 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2886 - val_sparse_categorical_accuracy: 0.2105
+Epoch 54/150
+5/5 [==============================] - ETA: 0s - loss: 2.2809 - sparse_categorical_accuracy: 0.1419
+Epoch 54: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2809 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2884 - val_sparse_categorical_accuracy: 0.2105
+Epoch 55/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 55: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2895 - val_sparse_categorical_accuracy: 0.2105
+Epoch 56/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 56: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 302ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2895 - val_sparse_categorical_accuracy: 0.2105
+Epoch 57/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 57: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2893 - val_sparse_categorical_accuracy: 0.2105
+Epoch 58/150
+5/5 [==============================] - ETA: 0s - loss: 2.2818 - sparse_categorical_accuracy: 0.1419
+Epoch 58: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2818 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2869 - val_sparse_categorical_accuracy: 0.2105
+Epoch 59/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 59: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 311ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2865 - val_sparse_categorical_accuracy: 0.2105
+Epoch 60/150
+5/5 [==============================] - ETA: 0s - loss: 2.2816 - sparse_categorical_accuracy: 0.1419
+Epoch 60: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2816 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2869 - val_sparse_categorical_accuracy: 0.2105
+Epoch 61/150
+5/5 [==============================] - ETA: 0s - loss: 2.2816 - sparse_categorical_accuracy: 0.1419
+Epoch 61: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 306ms/step - loss: 2.2816 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2866 - val_sparse_categorical_accuracy: 0.2105
+Epoch 62/150
+5/5 [==============================] - ETA: 0s - loss: 2.2811 - sparse_categorical_accuracy: 0.1419
+Epoch 62: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2811 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2858 - val_sparse_categorical_accuracy: 0.2105
+Epoch 63/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 63: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2867 - val_sparse_categorical_accuracy: 0.2105
+Epoch 64/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 64: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2866 - val_sparse_categorical_accuracy: 0.2105
+Epoch 65/150
+5/5 [==============================] - ETA: 0s - loss: 2.2811 - sparse_categorical_accuracy: 0.1419
+Epoch 65: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2811 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2869 - val_sparse_categorical_accuracy: 0.2105
+Epoch 66/150
+5/5 [==============================] - ETA: 0s - loss: 2.2821 - sparse_categorical_accuracy: 0.1419
+Epoch 66: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2821 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2868 - val_sparse_categorical_accuracy: 0.2105
+Epoch 67/150
+5/5 [==============================] - ETA: 0s - loss: 2.2810 - sparse_categorical_accuracy: 0.1419
+Epoch 67: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 307ms/step - loss: 2.2810 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2876 - val_sparse_categorical_accuracy: 0.2105
+Epoch 68/150
+5/5 [==============================] - ETA: 0s - loss: 2.2811 - sparse_categorical_accuracy: 0.1419
+Epoch 68: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 307ms/step - loss: 2.2811 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2877 - val_sparse_categorical_accuracy: 0.2105
+Epoch 69/150
+5/5 [==============================] - ETA: 0s - loss: 2.2830 - sparse_categorical_accuracy: 0.1419
+Epoch 69: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2830 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2882 - val_sparse_categorical_accuracy: 0.2105
+Epoch 70/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 70: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2879 - val_sparse_categorical_accuracy: 0.2105
+Epoch 71/150
+5/5 [==============================] - ETA: 0s - loss: 2.2818 - sparse_categorical_accuracy: 0.1419
+Epoch 71: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 306ms/step - loss: 2.2818 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2878 - val_sparse_categorical_accuracy: 0.2105
+Epoch 72/150
+5/5 [==============================] - ETA: 0s - loss: 2.2813 - sparse_categorical_accuracy: 0.1419
+Epoch 72: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2813 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2874 - val_sparse_categorical_accuracy: 0.2105
+Epoch 73/150
+5/5 [==============================] - ETA: 0s - loss: 2.2816 - sparse_categorical_accuracy: 0.1419
+Epoch 73: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2816 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2883 - val_sparse_categorical_accuracy: 0.2105
+Epoch 74/150
+3/5 [=================>............] - ETA: 0s - loss: 2.2803 - sparse_categorical_accuracy: 0.1875
+5/5 [==============================] - 1s 301ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2859 - val_sparse_categorical_accuracy: 0.2105
+Epoch 95/150
+5/5 [==============================] - ETA: 0s - loss: 2.2812 - sparse_categorical_accuracy: 0.1419
+Epoch 95: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2812 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2860 - val_sparse_categorical_accuracy: 0.2105
+Epoch 96/150
+5/5 [==============================] - ETA: 0s - loss: 2.2822 - sparse_categorical_accuracy: 0.1419
+Epoch 96: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 312ms/step - loss: 2.2822 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2854 - val_sparse_categorical_accuracy: 0.2105
+Epoch 97/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 97: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2837 - val_sparse_categorical_accuracy: 0.2105
+Epoch 98/150
+5/5 [==============================] - ETA: 0s - loss: 2.2827 - sparse_categorical_accuracy: 0.1419
+Epoch 98: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2827 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2839 - val_sparse_categorical_accuracy: 0.2105
+Epoch 99/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 99: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2833 - val_sparse_categorical_accuracy: 0.2105
+Epoch 100/150
+5/5 [==============================] - ETA: 0s - loss: 2.2819 - sparse_categorical_accuracy: 0.1419
+Epoch 100: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2819 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2827 - val_sparse_categorical_accuracy: 0.2105
+Epoch 101/150
+5/5 [==============================] - ETA: 0s - loss: 2.2830 - sparse_categorical_accuracy: 0.1419
+Epoch 101: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 305ms/step - loss: 2.2830 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2837 - val_sparse_categorical_accuracy: 0.2105
+Epoch 102/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 102: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2835 - val_sparse_categorical_accuracy: 0.2105
+Epoch 103/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 103: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 309ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2833 - val_sparse_categorical_accuracy: 0.2105
+Epoch 104/150
+5/5 [==============================] - ETA: 0s - loss: 2.2815 - sparse_categorical_accuracy: 0.1419
+Epoch 104: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 308ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2838 - val_sparse_categorical_accuracy: 0.2105
+Epoch 105/150
+5/5 [==============================] - ETA: 0s - loss: 2.2819 - sparse_categorical_accuracy: 0.1419
+Epoch 105: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2819 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2849 - val_sparse_categorical_accuracy: 0.2105
+Epoch 106/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 106: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 302ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2846 - val_sparse_categorical_accuracy: 0.2105
+Epoch 107/150
+5/5 [==============================] - ETA: 0s - loss: 2.2818 - sparse_categorical_accuracy: 0.1419
+Epoch 107: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 302ms/step - loss: 2.2818 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2847 - val_sparse_categorical_accuracy: 0.2105
+Epoch 108/150
+5/5 [==============================] - ETA: 0s - loss: 2.2806 - sparse_categorical_accuracy: 0.1419
+Epoch 108: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2806 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2846 - val_sparse_categorical_accuracy: 0.2105
+Epoch 109/150
+5/5 [==============================] - ETA: 0s - loss: 2.2820 - sparse_categorical_accuracy: 0.1419
+Epoch 109: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2820 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2850 - val_sparse_categorical_accuracy: 0.2105
+Epoch 110/150
+5/5 [==============================] - ETA: 0s - loss: 2.2811 - sparse_categorical_accuracy: 0.1419
+Epoch 110: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2811 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2843 - val_sparse_categorical_accuracy: 0.2105
+Epoch 111/150
+5/5 [==============================] - ETA: 0s - loss: 2.2812 - sparse_categorical_accuracy: 0.1419
+Epoch 111: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 299ms/step - loss: 2.2812 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2836 - val_sparse_categorical_accuracy: 0.2105
+Epoch 112/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 112: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 304ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2831 - val_sparse_categorical_accuracy: 0.2105
+Epoch 113/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 113: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 303ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2829 - val_sparse_categorical_accuracy: 0.2105
+Epoch 114/150
+5/5 [==============================] - ETA: 0s - loss: 2.2817 - sparse_categorical_accuracy: 0.1419
+Epoch 114: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2817 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2830 - val_sparse_categorical_accuracy: 0.2105
+Epoch 115/150
+5/5 [==============================] - ETA: 0s - loss: 2.2809 - sparse_categorical_accuracy: 0.1419
+Epoch 115: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 301ms/step - loss: 2.2809 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2840 - val_sparse_categorical_accuracy: 0.2105
+Epoch 116/150
+5/5 [==============================] - ETA: 0s - loss: 2.2814 - sparse_categorical_accuracy: 0.1419
+Epoch 116: saving model to .\Model\ChatBotModel.hdf5
+5/5 [==============================] - 1s 317ms/step - loss: 2.2814 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2844 - val_sparse_categorical_accuracy: 0.2105
+model training finish .
+5/5 [==============================] - 1s 301ms/step - loss: 2.2815 - sparse_categorical_accuracy: 0.1419 - val_loss: 2.2859 - val_sparse_categorical_accuracy: 0.2105

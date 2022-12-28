@@ -17,7 +17,6 @@ def remove_things(text):
 
     text = re.sub(r'\w*[~`+@#$%*()_\^&–+={}>/|\\\[\]”‘<]+\w*', ' ', text)
     text = re.sub(r'\w*\'', '', text)
-    print(text)
     return text
 
 
