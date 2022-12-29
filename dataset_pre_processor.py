@@ -1,8 +1,12 @@
+import os
 from collections import Counter
+
+import numpy
 from keras.preprocessing.text import Tokenizer
 from keras.utils.data_utils import pad_sequences
 import text_preprocessor
 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 def counter_word(text_col):
     count = Counter()
@@ -16,6 +20,7 @@ class DatasetPreprocessor:
     def __init__(self, dictionnary, dataset, split_ratio, max_length=100):
         self.counter = counter_word(dictionnary.ortho)
         self.num_unique_words = len(self.counter)
+        self.max_length = max_length
 
         dataset = dataset.sample(frac=1).reset_index()
 
@@ -51,3 +56,11 @@ class DatasetPreprocessor:
 
     def encode_text(self, text):
         return self.tokenizer.texts_to_sequences(text)
+
+    def preprocess_text_to_predict(self, text):
+        text = text_preprocessor.preprocess(text)
+        text = numpy.array([text])
+        text_encoded = self.encode_text(text)
+        output = pad_sequences(text_encoded, maxlen=self.max_length, padding="post", truncating="post")
+
+        return output
