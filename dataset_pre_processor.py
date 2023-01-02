@@ -17,7 +17,7 @@ def counter_word(text_col):
 
 
 class DatasetPreprocessor:
-    def __init__(self, dictionnary, dataset, split_ratio, max_length=100):
+    def __init__(self, dictionnary, dataset, split_ratio = 0.9, max_length=25):
         self.counter = counter_word(dictionnary.ortho)
         self.num_unique_words = len(self.counter)
         self.max_length = max_length
@@ -50,6 +50,9 @@ class DatasetPreprocessor:
         self.val_padded = pad_sequences(val_sequences, maxlen=max_length, padding="post", truncating="post")
 
         self.reverse_word_index = dict({(idx, word) for (word, idx) in self.word_index.items()})
+        print(train_df.text[0])
+        print(self.train_sentences[0])
+        print(self.train_padded[0])
 
     def decode_text(self, sequence):
         return " ".join([self.reverse_word_index.get(idx, "?") for idx in sequence])

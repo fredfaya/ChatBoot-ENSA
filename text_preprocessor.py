@@ -1,13 +1,12 @@
 import nltk
 import re
 import string
-# from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+import spacy
 
 stopwords_fr = set(stopwords.words('french'))
 punctuations = string.punctuation
-lemmatizer = WordNetLemmatizer()
+nlp_fr = spacy.load('fr_core_news_md')
 
 
 def remove_things(text):
@@ -21,9 +20,7 @@ def remove_things(text):
 
 
 def tokenize_text(text):
-    text_token = nltk.tokenize.word_tokenize(text)
-
-    return text_token
+    return [token.lemma_ for token in nlp_fr(text)]
 
 
 def remove_stops(text_tokens):
@@ -37,19 +34,10 @@ def remove_stops(text_tokens):
     return tokens_clean
 
 
-def lemmatizing(tokens):
-    lemmatized_tokens = [lemmatizer.lemmatize(word) for word in tokens]
-
-    return lemmatized_tokens
-
-
 def preprocess(text):
-
     output1 = remove_things(text)
     output2 = tokenize_text(output1)
-    output3 = remove_stops(output2)
-    output = lemmatizing(output3)
+    output = remove_stops(output2)
 
     return " ".join(output)
-
 

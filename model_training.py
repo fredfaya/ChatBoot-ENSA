@@ -11,14 +11,14 @@ dataset = pd.read_excel(datasetPath)
 
 # faire le preprocess du dataset
 print("preprocessing datasets ...")
-datasetPreprocessor = dataset_pre_processor.DatasetPreprocessor(dictionnay, dataset, 0.8)
+datasetPreprocessor = dataset_pre_processor.DatasetPreprocessor(dictionnay, dataset, 0.9)
 
 # creation du model
 print("create the model ...")
-chatModel = Model(100, dataset["target"].value_counts().count(), datasetPreprocessor)
+chatModel = Model(25, dataset["target"].value_counts().count(), datasetPreprocessor)
 
 # entrainer le model
 print("\n\nstart training the model ...\n\n")
-chatModel.train_model(150)
+chatModel.train_model(50000)
 
 print("model training finish .")

@@ -17,44 +17,40 @@ class Model:
         self.model = self.create_model()
 
     def create_model(self):
-        units = [128, 64, 32]
+        units = [32]
         rnn_input = self.model
         rnn_input.add(layers.Embedding(self.datasetpreprocessor.num_unique_words, 16, input_length=self.inputLength))
-        for i in range(len(units) - 1):
+        '''for i in range(len(units) - 1):
             rnn_input.add(
                 layers.LSTM(units[i], return_sequences=True, dropout=0.25, name="Lstm_layer" + str(i + 1)))
+                '''
         rnn_input.add(
-            layers.LSTM(units[-1], dropout=0.25, name="Lstm_layer" + str(len(units))))
-        for i in range(len(units)):
+            layers.LSTM(units[0], dropout=0.3, name="Lstm_layer" + str(len(units))))
+        '''for i in range(len(units)):
             rnn_input.add(layers.Dense(units[i], activation="relu"))
+            '''
 
         rnn_input.add(layers.Dense(self.n, activation="softmax"))
 
-        opt = keras.optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999, clipnorm=1.0)
-        loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(
-            from_logits=False,
-            ignore_class=None,
-            reduction="auto",
+        #opt = keras.optimizers.Adam()
+        '''loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(
             name="sparse_categorical_crossentropy",
-        )
-        metrics = tf.keras.metrics.SparseCategoricalAccuracy(
-            name="sparse_categorical_accuracy", dtype=None
-        )
+        )'''
 
-        rnn_input.compile(optimizer=opt, loss=loss_fn, metrics=metrics)
+        rnn_input.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
         rnn_input.summary()
 
         return rnn_input
 
     def train_model(self, epochs):
-        early_stopping_patience = 100
+        early_stopping_patience = 5000
         early_stopping = keras.callbacks.EarlyStopping(
             monitor="val_loss",
             patience=early_stopping_patience,
             restore_best_weights=True
         )
 
-        checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath=".\\Model\\ChatBotModel.hdf5",
+        checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath=".\\Model\\ChatBotModel_V1.hdf5",
                                                         monitor='val_loss',
                                                         verbose=1,
                                                         save_best_weights=True,
@@ -67,8 +63,8 @@ class Model:
                                         log_weights=True),
                           early_stopping
                           ]
-        if os.path.exists(".\\Model\\ChatBotModel.hdf5"):
-            self.model = tf.keras.models.load_model(".\\Model\\ChatBotModel.hdf5")
+        if os.path.exists(".\\Model\\ChatBotModel_V1.hdf5"):
+            self.model = tf.keras.models.load_model(".\\Model\\ChatBotModel_V1.hdf5")
 
         history = self.model.fit(
             self.datasetpreprocessor.train_padded,
@@ -77,5 +73,5 @@ class Model:
             epochs=epochs,
             callbacks=callbacks_list
         )
-        self.model.save(".\\Model\\ChatBotModel_final.h5")
+        self.model.save(".\\Model\\ChatBotModel_final_V1.h5")
         return history
