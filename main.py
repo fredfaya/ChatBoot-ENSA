@@ -4,6 +4,7 @@ import text_preprocessor
 import tensorflow as tf
 import dataset_pre_processor
 import pandas as pd
+import numpy as np
 
 print("reading datasets ...")
 datasetPath = "D:\\dataset.xlsx"
@@ -17,7 +18,7 @@ datasetPreprocessor = dataset_pre_processor.DatasetPreprocessor(dictionnay, data
 
 # charger le model
 print("Loading model ...")
-chatModel = tf.keras.models.load_model(".\\Model\\model-best.h5")
+chatModel = tf.keras.models.load_model(".\\Model\\ChatBotModel_V1.hdf5")
 
 scores = chatModel.evaluate(datasetPreprocessor.train_padded, datasetPreprocessor.train_labels, verbose=0)
 print('Accuracy on training data: {} \n Error on training data: {}'.format(scores[1], 1 - scores[1]))
@@ -28,7 +29,7 @@ while True:
     text = input("Question : ")
     text_ready = datasetPreprocessor.preprocess_text_to_predict(text)
     res = chatModel.predict(text_ready)
-    print(res[0])
+    print(np.argmax(res[0]))
 
 
 """MyRecorder = voiceRecorder()
