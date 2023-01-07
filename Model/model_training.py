@@ -1,7 +1,5 @@
 from Model import Model
-import dataset_pre_processor
-import pandas as pd
-import online_data_service
+from Data import dataset_pre_processor, online_data_service
 
 # lecture des datasets
 print("reading datasets ...")

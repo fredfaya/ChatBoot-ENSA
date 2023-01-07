@@ -50,7 +50,7 @@ class Model:
             restore_best_weights=True
         )
 
-        checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath=".\\Model\\ChatBotModel_V1.hdf5",
+        checkpoint = tf.keras.callbacks.ModelCheckpoint(filepath="ChatBotModel_V1.hdf5",
                                                         monitor='val_loss',
                                                         verbose=1,
                                                         save_best_weights=True,
@@ -63,8 +63,8 @@ class Model:
                                         log_weights=True),
                           early_stopping
                           ]
-        if os.path.exists(".\\Model\\ChatBotModel_V1.hdf5"):
-            self.model = tf.keras.models.load_model(".\\Model\\ChatBotModel_V1.hdf5")
+        if os.path.exists("ChatBotModel_V1.hdf5"):
+            self.model = tf.keras.models.load_model("ChatBotModel_V1.hdf5")
 
         history = self.model.fit(
             self.datasetpreprocessor.train_padded,

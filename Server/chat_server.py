@@ -1,8 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import tensorflow as tf
-import dataset_pre_processor
-import online_data_service
+from Data import dataset_pre_processor, online_data_service
 import numpy as np
 
 # liste des reponses appropriees a chaques questions
@@ -39,7 +38,7 @@ datasetPreprocessor = dataset_pre_processor.DatasetPreprocessor(dictionary, data
 
 # charger le model
 print("Loading model ...")
-chatModel = tf.keras.models.load_model(".\\Model\\ChatBotModel_V1.hdf5")
+chatModel = tf.keras.models.load_model("../Model/ChatBotModel_V1.hdf5")
 
 HOST = '0.0.0.0'
 PORT = 8081
@@ -61,6 +60,10 @@ def response():
     if probabilities[prediction] <= 0.5:  # pour etre sur de la reponse a plus de 50% de probabilite  au moins
         return jsonify({'response': reponse_not_known})
     else:
+        # on va ajouter la nouvelle prediction a notre dataset en ligne
+        dataset.loc[len(dataset.index)] = [text, prediction]
+        online_data_service.write_data_to_sheet(online_data_service.GSheetName, online_data_service.TabName, dataset)
+
         return jsonify({'response': list_responses[prediction]})
 
 
