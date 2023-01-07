@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chatbot-ensa",
+  "private_key_id": "f4e9d9f7540e7d6fc96660583da44f53949d865b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDr8sD75cYwq/fY\n7MvFDnFxlyvLxEdUWxiO/UeJaLP4y+nclDaGf2uIpOTR9eVtUvFB58k76pNPhPzF\nKcAWUimn1luU6OETDyZENSm7eJ6DGYd8bNLWh9ISwOEK4pquRWnloj0nteB7zUdF\nJcwUDaLjI8cDqlkAaJC5lczHVOW0QyoWtfCUK+hJ1ZTg9EMJAvXQKaAccqbv9EUN\nRuu2GqQMGwnMNHdvuSOqlokyZNRu03xLQsUc+SetRAdoaluORwVTsMrfF2zkwJXD\n1WQeVtZ0dqbYpfalWSplrETmFdfbxQpRcNcg3OejeaYhCKPTx8H4bs5rd3dK9GHS\n40Zmd0rNAgMBAAECggEAFc7ywnWq+22xs2WzseuTVb30yNlEBIqE+xZzCcLZO6pR\nW9eBMK5PWKpxEe0J/zBW51IOuhCE/CkdGfYxcH64pfA8t8dMom/YiB5n1JGiCRkP\nelMuq7CTHLOiOVjXljsJPjXgNC7t6FOBfmUvdz0JbLguWWrh3hVMJzMu4c+5iY8s\nQf4w11VWIzCmQWy62D+AhPYMOBou1d0R9zt9Vz605A4lI1B27VuAc9BBTzrofZdv\nK4au9VUJxq9k0iIfa/ySsFnDMBADJOXWqrNk43zb/Zt0qRDt4S8Q6eW/Irb97Z68\nVEMzKuIcFsWoqBHAA7Fxv5zP70CfGlWPT3rn1/qw2wKBgQD3xRlFfAtYQsBJy1pN\n8OHWV10EEDb/fy2vLdTTaj6Nn3YUAa5vlpjO1Tk6dDr4naD8F7r4WeSuJpuJk107\nJd7Zw6tVdfdknbPx5H41aolLm23otq/izkCu1mI9EWFk1GrqF0I040OjS4V9zrQz\nXl/jRND6DI5MjBv6CHz7dJC/1wKBgQDzySFQRd4xIMQh0A95xpIj9AKiK1zlPwmp\ncsWO/9mhdEVl+fU7ZM3YO5YvxAHu5fjYRrk0UtVJ+OJeXgYRCoXaADT68ZnHiVZn\nthcxyt4GfFXhSx7MhNXqmpD3I5+GFYC2goMDGc//OshgoCicQ+XgIti9hozEmdaf\n0/ELlBQF+wKBgFler7Hff1wTn7Y+clFAvMUKeBOaIaxg3EKevnCPlwaQaQ/oV1oK\nsQ2R3XWXLRo2CTZE/PzNt+2VIW8rR2qpS0uzB17pERYqyBhNObTcu68Y3jkdhC3E\nBZLK415xoXa0I+hSAWCARQpmmDz7zQXmWaHpVZOL6dv0gbbbTvGIZxm7AoGBAIBW\nYOBGd8s7KaV3R75e5+5fdcdztorE3cxDrHc0f5h8glBF/3DOB4OPEuiAclgW3yLU\nUImYFcrEaD8vllgARyjVtQ5qg/9EcKVWee1vk+SsLfXVuxgF0iuYRTqlmURYK5Np\nL5lBTHtbscMUbWyeXfTZw2o62/5f0ln/lET5JnVjAoGAaWWT9HALUP68IYGdufbz\nHOlDNNg/mZAPH1xB3pjDTyOdRZhw/AM7+GvZQN+yif6U7CZ7bx4CHMKdD1KgnZwd\nyIId9al6XkiqKYVw8577N83dGopLveV/x0RwwPY7Qx5OHSln06btAkH7Txc9Z8gJ\nVhU/EX4wT+LITXnwiO6PiJU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "chatbot-ensa@chatbot-ensa.iam.gserviceaccount.com",
+  "client_id": "107647956162614127622",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatbot-ensa%40chatbot-ensa.iam.gserviceaccount.com"
+}

@@ -1,13 +1,12 @@
 from Model import Model
 import dataset_pre_processor
 import pandas as pd
+import online_data_service
 
 # lecture des datasets
 print("reading datasets ...")
-datasetPath = "D:\\dataset.xlsx"
-dictionnaryPath = "D:\\Lexique.xlsx"
-dictionnay = pd.read_excel(dictionnaryPath)
-dataset = pd.read_excel(datasetPath)
+dictionnay = dataset = online_data_service.get_data_from_sheet(online_data_service.LexiqueGShetName, online_data_service.TabName)
+dataset = online_data_service.get_data_from_sheet(online_data_service.GSheetName, online_data_service.TabName)
 
 # faire le preprocess du dataset
 print("preprocessing datasets ...")

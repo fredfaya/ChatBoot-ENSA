@@ -1,0 +1,13 @@
+flask_cors~=3.0.0
+tensorflow~=2.11.0
+pandas~=1.5.2
+numpy~=1.24.1
+keras~=2.11.0
+wandb~=0.13.7
+Flask~=2.2.2
+pyttsx3~=2.90
+nltk~=3.8
+spacy~=3.4.4
+PyAudio~=0.2.12
+gspread~=5.7.2
+gspread_dataframe~=3.3.0

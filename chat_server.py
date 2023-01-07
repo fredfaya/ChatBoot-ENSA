@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import tensorflow as tf
 import dataset_pre_processor
-import pandas as pd
+import online_data_service
 import numpy as np
 
 # liste des reponses appropriees a chaques questions
@@ -30,10 +30,8 @@ list_responses = [reponse_question_0,
                   reponse_question_9]
 
 print("reading datasets ...")
-datasetPath = "D:\\dataset.xlsx"
-dictionaryPath = "D:\\Lexique.xlsx"
-dictionary = pd.read_excel(dictionaryPath)
-dataset = pd.read_excel(datasetPath)
+dictionary = dataset = online_data_service.get_data_from_sheet(online_data_service.LexiqueGShetName, online_data_service.TabName)
+dataset = online_data_service.get_data_from_sheet(online_data_service.GSheetName, online_data_service.TabName)
 
 # faire le preprocess du dataset pour pouvoir les utiliser pour les predictions
 print("preprocessing datasets for text encoding...")
@@ -53,13 +51,14 @@ CORS(app)
 
 @app.route('/chatServer/response', methods=['GET', 'POST'])
 def response():
+
     req = request.get_json()
     text = req["message"]
     text_ready = datasetPreprocessor.preprocess_text_to_predict(text)
     probabilities = chatModel.predict(text_ready)[0]
     prediction = np.argmax(probabilities)
 
-    if probabilities[prediction] <= 0.5:  # pour etre sur de la reponse a plus de 50% au moins
+    if probabilities[prediction] <= 0.5:  # pour etre sur de la reponse a plus de 50% de probabilite  au moins
         return jsonify({'response': reponse_not_known})
     else:
         return jsonify({'response': list_responses[prediction]})
@@ -78,5 +77,5 @@ def not_found(error):
 if __name__ == '__main__':
     # lancement du serveur
     app.run(host=HOST,
-            debug=True,  # automatic reloading enabled
+            debug=False,  # automatic reloading not enabled
             port=PORT)
