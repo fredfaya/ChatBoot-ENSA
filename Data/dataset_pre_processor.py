@@ -4,9 +4,10 @@ from collections import Counter
 import numpy
 from keras.preprocessing.text import Tokenizer
 from keras.utils.data_utils import pad_sequences
-import text_preprocessor
+from Data import text_preprocessor
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 
 def counter_word(text_col):
     count = Counter()
@@ -17,7 +18,7 @@ def counter_word(text_col):
 
 
 class DatasetPreprocessor:
-    def __init__(self, dictionnary, dataset, split_ratio = 0.9, max_length=25):
+    def __init__(self, dictionnary, dataset, split_ratio=0.9, max_length=25):
         self.counter = counter_word(dictionnary.ortho)
         self.num_unique_words = len(self.counter)
         self.max_length = max_length

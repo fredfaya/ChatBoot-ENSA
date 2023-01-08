@@ -29,7 +29,8 @@ list_responses = [reponse_question_0,
                   reponse_question_9]
 
 print("reading datasets ...")
-dictionary = dataset = online_data_service.get_data_from_sheet(online_data_service.LexiqueGShetName, online_data_service.TabName)
+dictionary = dataset = online_data_service.get_data_from_sheet(online_data_service.LexiqueGShetName,
+                                                               online_data_service.TabName)
 dataset = online_data_service.get_data_from_sheet(online_data_service.GSheetName, online_data_service.TabName)
 
 # faire le preprocess du dataset pour pouvoir les utiliser pour les predictions
@@ -38,7 +39,7 @@ datasetPreprocessor = dataset_pre_processor.DatasetPreprocessor(dictionary, data
 
 # charger le model
 print("Loading model ...")
-chatModel = tf.keras.models.load_model("../Model/ChatBotModel_V1.hdf5")
+chatModel = tf.keras.models.load_model("./Model/ChatBotModel_V1.hdf5")
 
 HOST = '0.0.0.0'
 PORT = 8081
@@ -50,7 +51,6 @@ CORS(app)
 
 @app.route('/chatServer/response', methods=['GET', 'POST'])
 def response():
-
     req = request.get_json()
     text = req["message"]
     text_ready = datasetPreprocessor.preprocess_text_to_predict(text)
@@ -58,6 +58,10 @@ def response():
     prediction = np.argmax(probabilities)
 
     if probabilities[prediction] <= 0.5:  # pour etre sur de la reponse a plus de 50% de probabilite  au moins
+        # on va ajouter quand meme le texte a notre dataset, le but etant de pouvoir trouver de nouvelles categories
+        dataset.loc[len(dataset.index)] = [text, -1]
+        online_data_service.write_data_to_sheet(online_data_service.GSheetName, online_data_service.TabName, dataset)
+
         return jsonify({'response': reponse_not_known})
     else:
         # on va ajouter la nouvelle prediction a notre dataset en ligne
