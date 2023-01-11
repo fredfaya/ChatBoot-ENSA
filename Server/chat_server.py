@@ -143,5 +143,5 @@ def not_found(error):
 if __name__ == '__main__':
     # lancement du serveur
     app.run(host=HOST,
-            debug=False,  # automatic reloading not enabled
+            debug=True,  # automatic reloading not enabled
             port=PORT)
