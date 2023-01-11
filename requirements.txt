@@ -11,3 +11,4 @@ spacy~=3.4.4
 PyAudio~=0.2.12
 gspread~=5.7.2
 gspread_dataframe~=3.3.0
+gunicorn~=20.1.0

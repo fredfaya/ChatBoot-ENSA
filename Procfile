@@ -1,0 +1,1 @@
+web: gunicorn --chdir Server chat_server:app
