@@ -1,6 +1,5 @@
 import speech_recognition as sr  # recognise speech
 import pyttsx3
-import pyaudio
 
 
 class voiceRecorder:
